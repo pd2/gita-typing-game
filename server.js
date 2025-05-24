@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 3000;
 // Serve static files (e.g., HTML, CSS, JS for your game frontend)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Optional: Define API endpoints
-app.get('/ping', (req, res) => {
-  res.send('pong');
+// Fallback for unmatched routes (optional)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Start the server

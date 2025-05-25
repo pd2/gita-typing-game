@@ -16,7 +16,7 @@ let quotes, meanings;
 
 async function get_gita() {
   
-  let responses = await fetch('/bhagavadgita.txt');
+  let responses = await fetch('bhagavadgita.txt');
   
   let quotes_all = await responses.json();
   

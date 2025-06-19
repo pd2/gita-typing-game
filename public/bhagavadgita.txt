@@ -352,7 +352,7 @@
 "dhUmo rAtristathA kRSNaH SaNmAsA dakSiNAyanam, tatra cAndramasaM jyotiryogI prApya nivartate",
 "zuklakRSNe gatI hyete jagataH zAzvate mate, ekayA yAtyanAvRttimanyayAvartate punaH",
 "naite sRtI pArtha jAnanyogI muhyati kazcana, tasmAtsarveSu kAleSu yogayukto bhavArjuna",
-"vedeSu yajJeSu tapaHsu caiva dAneSu yatpuNyaphalaM pradiSTam, atyeti tatsarvamidaM viditvAyogI paraM sthAnamupaiti cAdyam",
+"vedeSu yajJeSu tapaHsu caiva dAneSu yatpuNyaphalaM pradiSTam, atyeti tatsarvamidaM viditvAyogI paraM sthAnamupaiti cAdyam"
 ],
 [
 "zrIbhagavAnuvAca, idaM tu te guhyatamaM pravakSyAmyanasUyave, jJAnaM vijJAnasahitaM yajjJAtvA mokSyase'zubhAt",

@@ -184,8 +184,8 @@ function startGame() {
 }
 
 function checkInput() {
-  const currentWord = wordQueue[0].replaceAll(',','').toLowerCase();
-  const typedValue = input.value.trim().toLowerCase();
+  const currentWord = wordQueue[0].replaceAll(',','');
+  const typedValue = input.value.trim();
 
   if (is_playing == false) {
     input.value = ""; // empty the text input

@@ -272,7 +272,7 @@ var copyText;
 
 function ShareIt() {
   
-  let linkURL = "https://pd2.github.io/gita-typing-game/";
+  let linkURL = window.location.href;
   
   copyText = `#BhagavadGita I learnt the meaning of shloka ${sh_index+1} from chapter ${ch_index+1} in ${Math.round(elapsedTime/1000)} sec at ${linkURL}`;
   

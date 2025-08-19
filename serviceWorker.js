@@ -2,10 +2,10 @@ const staticDev = "gita_typing_game"
 const service_worker_version = "v2.11"
 const assets = [
   "/",
-  "/public/index.html",
-  "/public/style.css",
-  "/public/bhagavadgita.txt",
-  "/public/script.js"
+  "/index.html",
+  "/style.css",
+  "/bhagavadgita.txt",
+  "/script.js"
 ]
 
 self.addEventListener("install", installEvent => {

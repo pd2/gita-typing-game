@@ -259,9 +259,9 @@ function gameOver() {
   }
   
   if (Math.random() > 0.5) {
-  viswaroopa.innerHTML = `<img class="img" src="./assets/viswaroopa.jpg">`
+  viswaroopa.innerHTML = `<img class="img" src="assets/viswaroopa.jpg">`
   } else {
-  viswaroopa.innerHTML = `<img class="img" src="./assets/Mahabharata.jpg">`
+  viswaroopa.innerHTML = `<img class="img" src="assets/Mahabharata.jpg">`
   }
   document.body.className = "viswaroopa";
 //  document.body.className = "winner";

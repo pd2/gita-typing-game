@@ -1,7 +1,6 @@
 const staticDev = "gita_typing_game"
-const service_worker_version = "v2.12"
+const service_worker_version = "v2.13"
 const assets = [
-  "/",
   "index.html",
   "style.css",
   "bhagavadgita.txt",

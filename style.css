@@ -88,7 +88,7 @@ button {
   width: 60px;
   height: 34px;
   margin-left: 20px;
-  background: url(./assets/rocket.png) right center no-repeat;
+  background: url(assets/rocket.png) right center no-repeat;
   background-size: 60px;
 }
 
@@ -168,7 +168,7 @@ button {
 }
 
 .winner {
-  background-image: url(./assets/confetti.gif);
+  background-image: url(assets/confetti.gif);
 }
 
 .img {

@@ -259,9 +259,9 @@ function gameOver() {
   }
   
   if (Math.random() > 0.5) {
-  viswaroopa.innerHTML = `<img class="img" src="https://cdn.glitch.global/225076cb-51c4-4503-955a-df6183e22d73/viswaroopa.jpg?v=1696161919579">`
+  viswaroopa.innerHTML = `<img class="img" src="./assets/viswaroopa.jpg">`
   } else {
-  viswaroopa.innerHTML = `<img class="img" src="https://cdn.glitch.global/225076cb-51c4-4503-955a-df6183e22d73/Mahabharata.jpg?v=1696106267514">`
+  viswaroopa.innerHTML = `<img class="img" src="./assets/Mahabharata.jpg">`
   }
   document.body.className = "viswaroopa";
 //  document.body.className = "winner";

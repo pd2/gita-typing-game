@@ -4,7 +4,7 @@
   "start_url": "https://pd2.github.io/gita-typing-game/",
   "icons": [
     {
-      "src": "./assets/gita_typing_icon.png",
+      "src": "assets/gita_typing_icon.png",
       "sizes": "256x256",
       "type": "image/png"
     }

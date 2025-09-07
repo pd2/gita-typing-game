@@ -254,7 +254,7 @@ function gameOver() {
   share.style.display = "block";
   share.focus();
   
-  if (is_random == false) {
+  if (progression_type == 1) {
     save_history();
   }
   

@@ -116,12 +116,12 @@ let wordQueue, quoteText, highlightPosition, startTime, ch_index = 0, sh_index =
 
 let num_errors, progression_type, nectar_index=-1;
 
-let lastPlayedTs;
+let typing_lastPlayedTs;
 
 function startGame() {
 
   var today = new Date();
-  if ( Na(new Date(lastPlayedTs), today) < 1) {
+  if ( Na(new Date(typing_lastPlayedTs), today) < 1) {
     alert("Play a new puzzle tomorrow!")
     return;
   }
@@ -235,7 +235,7 @@ function gameOver() {
     is_playing = false;
   }
 
-  lastPlayedTs = new Date();
+  typing_lastPlayedTs = new Date();
 
   elapsedTime = new Date().getTime() - startTime;
   // let time_taken = (elapsedTime/1000);
@@ -313,14 +313,14 @@ function get_history() {
   ch_index = JSON.parse(ch);
   sh_index = JSON.parse(sh);
   nectar_index = JSON.parse(nec);
-  lastPlayedTs = JSON.parse(lpts);
+  typing_lastPlayedTs = JSON.parse(lpts);
 }
 
 function save_history() {
   const ch = JSON.stringify(ch_index);
   const sh = JSON.stringify(sh_index);
   const nec = JSON.stringify(nectar_index);
-  const lpts = JSON.stringify(lastPlayedTs);
+  const lpts = JSON.stringify(typing_lastPlayedTs);
   localStorage.setItem('ch_index', ch);
   localStorage.setItem('sh_index', sh);
   localStorage.setItem('nectar_indx', nec);

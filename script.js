@@ -125,7 +125,7 @@ let igcse_list = [
       [5, 11, 33],
       [],
       [12],
-      [13, 17, 22],
+      [14, 18, 23],
       [],
       [],
       [],
@@ -143,8 +143,8 @@ function startGame() {
 
   var today = new Date();
   if ( Na(new Date(typing_lastPlayedTs), today) < 1) {
-    alert("Play a new puzzle tomorrow!")
-    return;
+//    alert("Play a new puzzle tomorrow!")
+//    return;
   }
   
   console.log("new game started!");

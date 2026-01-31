@@ -112,9 +112,30 @@ let nectar_list = [
       [2, 11, 47, 66, 78]
     ];
 
+let igcse_list = [ 
+      [14, 39], 
+      [],
+      [43],
+      [38],
+      [20, 25],
+      [29, 30],
+      [],
+      [18, 22],
+      [],
+      [5, 11, 33],
+      [],
+      [12],
+      [13, 17, 22],
+      [],
+      [],
+      [],
+      [15, 16],
+      [47]
+    ];
+
 let wordQueue, quoteText, highlightPosition, startTime, ch_index = 0, sh_index = -1, is_playing = false;
 
-let num_errors, progression_type, nectar_index=-1;
+let num_errors, progression_type, nectar_index=-1, igcse_index=-1;
 
 let typing_lastPlayedTs;
 
@@ -155,7 +176,7 @@ function startGame() {
         ch_index = 0;
       }
     }
-  } else {     // (progression_type == 2)
+  } else if (progression_type == 2) { // Power of zero
     nectar_index++;
     if (nectar_index >= nectar_list[ch_index].length) {
       nectar_index = 0;
@@ -165,6 +186,19 @@ function startGame() {
       }
     }
     sh_index = nectar_list[ch_index][nectar_index]-1;
+  } else {     // (progression_type == 3) IGCSE
+    igcse_index++;
+    if (igcse_index >= igcse_list[ch_index].length) {
+      igcse_index = 0;
+      ch_index++;
+      if (ch_index == igcse_list.length) {
+        ch_index = 0;
+      }
+      while(igcse_list[ch_index].length == 0) {
+        ch_index++;
+      }
+    }
+    sh_index = igcse_list[ch_index][igcse_index]-1;
   }
   quoteText = quotes[ch_index][sh_index];
   wordQueue = quoteText.split(" ");
@@ -308,11 +342,13 @@ function get_history() {
   const ch = localStorage.getItem('ch_index') || noItemsFound_ch;
   const sh = localStorage.getItem('sh_index') || noItemsFound_sh;
   const nec = localStorage.getItem('nectar_indx') || noItemsFound_nec;
+  const igcse = localStorage.getItem('igcse_indx') || noItemsFound_igcse
   const lpts = localStorage.getItem('lpts') || noItemsFound_lastPlayedTs;
 
   ch_index = JSON.parse(ch);
   sh_index = JSON.parse(sh);
   nectar_index = JSON.parse(nec);
+  igcse_index = JSON.parse(igcse);
   typing_lastPlayedTs = JSON.parse(lpts);
 }
 
@@ -320,10 +356,12 @@ function save_history() {
   const ch = JSON.stringify(ch_index);
   const sh = JSON.stringify(sh_index);
   const nec = JSON.stringify(nectar_index);
+  const igcse = JSON.stringify(igcse_index);
   const lpts = JSON.stringify(typing_lastPlayedTs);
   localStorage.setItem('ch_index', ch);
   localStorage.setItem('sh_index', sh);
   localStorage.setItem('nectar_indx', nec);
+  localStorage.setItem('igcse_indx', igcse);
   localStorage.setItem('lpts', lpts);
 }
 

@@ -343,7 +343,7 @@ function get_history() {
   const sh = localStorage.getItem('sh_index') || noItemsFound_sh;
   const nec = localStorage.getItem('nectar_indx') || noItemsFound_nec;
   const igcse = localStorage.getItem('igcse_indx') || noItemsFound_igcse
-  const lpts = localStorage.getItem('lpts') || noItemsFound_lastPlayedTs;
+  const lpts = localStorage.getItem('typing_lpts') || noItemsFound_lastPlayedTs;
 
   ch_index = JSON.parse(ch);
   sh_index = JSON.parse(sh);
@@ -362,7 +362,7 @@ function save_history() {
   localStorage.setItem('sh_index', sh);
   localStorage.setItem('nectar_indx', nec);
   localStorage.setItem('igcse_indx', igcse);
-  localStorage.setItem('lpts', lpts);
+  localStorage.setItem('typing_lpts', lpts);
 }
 
 get_history();

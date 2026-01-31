@@ -1,5 +1,5 @@
 const staticDev = "gita_typing_game"
-const service_worker_version = "v2.2"
+const service_worker_version = "v2.21"
 const assets = [
   "index.html",
   "style.css",

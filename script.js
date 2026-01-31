@@ -338,7 +338,7 @@ function Na(e, a) {
 
 
 function get_history() {
-  const noItemsFound_ch = 0, noItemsFound_sh = -1, noItemsFound_nec = -1, noItemsFound_lastPlayedTs = 0;
+  const noItemsFound_ch = 0, noItemsFound_sh = -1, noItemsFound_nec = -1, noItemsFound_igcse = -1, noItemsFound_lastPlayedTs = 0;
   const ch = localStorage.getItem('ch_index') || noItemsFound_ch;
   const sh = localStorage.getItem('sh_index') || noItemsFound_sh;
   const nec = localStorage.getItem('nectar_indx') || noItemsFound_nec;
